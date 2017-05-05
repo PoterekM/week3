@@ -2,20 +2,25 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
   event.preventDefault();
-    var number = $("userNumber").val()
+     var number = $("userNumber").val();
 
+     var userArray = [];
+     userArray = userArray.push(index);
 
     for (var index = 1; index <= number; index+1) {
       if (index % 15 === 0) {
-        $("userList").append("<li>"+"Ping-Pong!"+"</li>");}
+        $("userArray").append("<li>"+"Ping-Pong!"+"</li>");}
       else if (index % 3 === 0) {
-        $("userList").append("<li>"+"Ping!"+"</li>");}
+        $("userArray").append("<li>"+"Ping!"+"</li>");}
       else if (index % 5 === 0) {
-        $("userList").append("<li>"+"Pong!"+"</li>");}
+        $("userArray").append("<li>"+"Pong!"+"</li>");}
       else{
-        $("userList").append("<li>"+ index +"</li>");}
+        $("userArray").append("<li>"+ index +"</li>");}
+
+        userArray = userArray.push(index)
     };
 
+ $("#userList").show();
 
   });
 });

@@ -4,26 +4,26 @@ $(document).ready(function() {
   event.preventDefault();
      var number = parseInt($("#userNumber").val());
 
+
+
+// function {
      var userArray = [];
-     
 
-
-
-    forEach(var index = 1; index <= number; index+1) {
+    for (var index = 1; index <= userNumber; index+1) {
       if (index % 15 === 0) {
-        userArray.push$("number").append("<li>"+"Ping-Pong!"+"</li>");}
+        $("number").append("<li>"+"Ping-Pong!"+"</li>");}
       else if (index % 3 === 0) {
-        userArray.push.$("number").append("<li>"+"Ping!"+"</li>");}
+        $("number").append("<li>"+"Ping!"+"</li>");}
       else if (index % 5 === 0) {
-        userArray.push.$("number").append("<li>"+"Pong!"+"</li>");}
+        $("number").append("<li>"+"Pong!"+"</li>");}
       else{
-        userArray.push.$("number").append("<li>"+ index +"</li>");}
+        $("number").append("<li>"+ index +"</li>");}
         return userArray.push(index);
 //
 // return userArray;
     };
 
- $("#output").text("userArray");
+ $("#output").number("userArray");
 
   });
 });
